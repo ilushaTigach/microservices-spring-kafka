@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-users
+      author: Telyatenko-Ilay
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: 2d30f1c3-e70d-42a0-a3d3-58a5c2d50d04
+              - column:
+                  name: name
+                  value: Ilay Telyatenko
+              - column:
+                  name: email
+                  value: telyatenko@mail.com
+              - column:
+                  name: address_id
+                  value: 5f30f1c3-e70d-42a0-a3d3-58a5c2d50d02

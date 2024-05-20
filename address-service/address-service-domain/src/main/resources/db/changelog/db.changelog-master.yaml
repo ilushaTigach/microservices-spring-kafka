@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/sql/create-table-addresses.yaml
+  - include:
+      file: db/changelog/sql/insert-into-addresses.yaml

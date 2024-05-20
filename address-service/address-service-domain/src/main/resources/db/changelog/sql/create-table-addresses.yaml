@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-addresses
+      author: Telyatenko-Ilay
+      changes:
+        - createTable:
+            tableName: addresses
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: street
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: city
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: zipcode
+                  type: varchar(255)
+                  constraints:
+                    nullable: false

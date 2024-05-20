@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-users
+      author: Telyatenko-Ilay
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: email
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: address_id
+                  type: UUID
+                  constraints:
+                    nullable: false
